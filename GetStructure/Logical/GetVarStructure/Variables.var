@@ -1,0 +1,13 @@
+(*Load structure details*)
+VAR
+	StructureLoader_0 : StructureLoader := (0);
+END_VAR
+(*Compare structures*)
+VAR
+	StructureLoader_1 : StructureLoader := (0); (*Second instance for backup structure*)
+	compare : USINT; (*Start compare with 1*)
+	i : UINT;
+	result : UDINT;
+	diff_str : STRING[MAX_VARIABLE_NAME_LEN]; (*String containing the variable name where a difference was detected*)
+	ack : BOOL; (*Acknowledge the change*)
+END_VAR

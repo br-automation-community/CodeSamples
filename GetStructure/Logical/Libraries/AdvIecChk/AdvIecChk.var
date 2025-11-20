@@ -1,0 +1,13 @@
+(************************************************************************************
+
+Advanced IEC Check Functions Library
+
+File: AdvIecChk.var
+Description: Constants used in the AdvIecChk library
+Authors:
+    - Marcus Mangel (B&R Industrial Automation)
+
+************************************************************************************)
+VAR CONSTANT
+	ADVIECCHK_MAX_STRING_LEN : USINT := 64; (*Maximum character length for the error info string. Used to prevent buffer overflow*)
+END_VAR

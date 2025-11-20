@@ -1,0 +1,17 @@
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Change this according to your structure*)
+VAR CONSTANT
+	MAX_STRUCT_DEPTH : UINT := 10; (*Maximum depth of the structure*)
+	MAX_VARIABLE_IDX : UINT := 100; (*Maximum number of variables in the structure, including all array indices*)
+	MAX_VARIABLE_NAME_LEN : UINT := 200; (*Maximum length of a complete variable name*)
+	OVERRIDE : UINT := 2; (*Number of executions per cycle*)
+END_VAR
+(*-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------*)
+(*Dont change anything below this line*)
+VAR CONSTANT
+	SINGLE_VARIABLE_NAME_LEN : UINT := 33; (*Default length of variable. Dont change this value!*)
+	TOTAL_STRUCTURE_NAME_LEN : UINT := SINGLE_VARIABLE_NAME_LEN+MAX_VARIABLE_NAME_LEN;
+	ERR_VAR_TO_LONG : UINT := 10000; (*Total variable name is too long. Increase MAX_VARIABLE_NAME_LEN*)
+	ERR_MAX_RECURSIONS : UINT := 10001; (*Max structure recursion exceeded. Increase MAX_STRUCT_DEPTH*)
+	ERR_MAX_ENTRIES : UINT := 10002; (*Max number of enrties exceeded. Increase MAX_VARIABLE_IDX*)
+END_VAR

@@ -1,0 +1,4 @@
+VAR
+	testvariable_org : testStructure;
+	testvariable_cpy : testStructure;
+END_VAR
