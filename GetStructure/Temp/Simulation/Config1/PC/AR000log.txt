@@ -1,0 +1,21 @@
+Fri Nov 21 09:52:40 2025
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Fri Nov 21 09:52:40 2025
+No ARsim registration found!
+
+Fri Nov 21 09:52:40 2025
+InstanceName: 0000000efaf3422a
+
+Fri Nov 21 09:52:40 2025
+WorkingDirectory: C:\Projects\Samples\AS\CodeSamples\GetStructure\Temp\Simulation\Config1\PC\
+
+Fri Nov 21 09:52:40 2025
+COMMAND_COLDSTART
+
+Fri Nov 21 09:52:42 2025
+Version: Q4.93
+
+Fri Nov 21 12:16:10 2025
+COMMAND_TERMINATE
+

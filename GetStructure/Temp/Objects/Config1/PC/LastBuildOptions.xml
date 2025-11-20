@@ -1,0 +1,259 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio FileVersion="4.9" WorkingVersion="4.12"?>
+<RuleSetOptions UsesUTCTime="True">
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwac.br&quot; -L &quot;AdvIecChk: V2.00.0, ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*, sys_lib: V*&quot; -c &quot;Config1&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -M IA32 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; -T SG4 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -c &quot;Config1&quot; -sysconf -S &quot;PC&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\sysconf.br&quot; -T SG4 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="c:\program files\brautomation4\as412\upgrades\modified.txt" LastWriteTime="2025-06-03 09:40:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\asfw.br&quot; -T SG4 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -firmware -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="c:\program files\brautomation4\as412\upgrades\modified.txt" LastWriteTime="2025-06-03 09:40:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot;  -v V1.00.0 -S &quot;PC&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ashwd.br&quot; -T SG4 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; -zip -s &quot;Config1&quot; -hwd -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\Hardware.hw&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot;  -arconfig -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.30.181 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -c &quot;Config1&quot; -v V1.00.0 -S &quot;PC&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\arconfig.br&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ReActionTechnologyConfiguration.xml&quot; -T SG4 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\technologypackages\unitsystem\n.d\transfer\modules\sg4\udbdef.br" LastWriteTime="2024-11-04 09:15:38" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\UnitSystem\n.d\Transfer\Modules\SG4\udbdef.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\udbdef.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\iomap.iom" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\pvmap.vvm" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\hardware.hw" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\channelconfiguration.xml" LastWriteTime="2025-11-21 07:39:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\IoMap.iom&quot; &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\PvMap.vvm&quot;  -m &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ConfigInfo.cfi&quot; -g &quot;$(AS_PROJECT_PATH)\Temp\Objects\Declarations.lst&quot; -x &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ChannelConfiguration.xml&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC&quot; -iomap -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\iomap.br&quot; -T SG4 -B Q4.93 -P &quot;$(AS_PROJECT_PATH)&quot; -s &quot;Config1.PC&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\technologypackages\textsystem\n.d\objectcatalog\elements\textconfig\template\tc.textconfig" LastWriteTime="2024-05-07 13:22:28" />
+    <CommandLine Parameter=" -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -c &quot;C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\TextSystem\n.d\ObjectCatalog\Elements\TextConfig\Template\TC.textconfig&quot; -I &quot;C:\Program Files\BRAutomation4\AS\System\Q0493&quot; &quot;C:\Program Files\BRAutomation4\AS412\AS\TechnologyPackages\UnitSystem\n.d&quot; -P &quot;$(AS_PROJECT_PATH)&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.imx" LastWriteTime="2025-11-21 07:39:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.imx&quot; -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata\tcdata.s18d" LastWriteTime="2025-11-21 07:39:38" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData\TCData.s18d&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\TCData.br&quot; -t TextModule" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\role.role" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\Role.role&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\Role.br&quot; -zip -B Q4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\user.user" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\userrolesystem\role.role" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\UserRoleSystem\User.user&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\User.br&quot; -zip -B Q4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\fwrules.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\accessandsecurity\firewall\rules.firewallrules" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\AccessAndSecurity\Firewall\Rules.firewallRules&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\FWRules.br&quot; -zip -B Q4.93 -z n.d -P &quot;$(AS_PROJECT_PATH)&quot; -c &quot;Config1&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\structuret.ox" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.per" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\StructureT.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT.br&quot; -v V1.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -extMembers -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*&quot; -r Cyclic8 -p 2 -s &quot;GetVarStructure&quot; -L &quot;AdvIecChk: V2.00.0, ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="VolatileMemory" Value="65535" />
+    <AdditionalBuildTrigger Key="PermanentAnalogMemory" Value="0" />
+    <AdditionalBuildTrigger Key="PermanentDigitalMemory" Value="0" />
+    <AdditionalBuildTrigger Key="RemanentMemory" Value="4096" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\structuret.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\a.out" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\StructureT.ox&quot; -T SG4 -r Cyclic8 -G V4.1.2  -B Q4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\main.st.o" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\structureloader.st.o" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\_bur_pvdef.st.o" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\Main.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\StructureLoader.st.o&quot; &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\_bur_pvdef.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\a.out&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libAdvIecChk.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libArEventLog.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libAsBrStr.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\main.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\main.st" LastWriteTime="2025-11-21 07:34:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\localfunctions\structureloadergetdata.st" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\localfunctions\structureloaderadddata.st" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\Main.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\Main.st.o&quot; -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -s &quot;GetVarStructure&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -preprocessor -pointers -extComments -extBitAccess -extMembers -extConstants -D _SG4 -a &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderGetData.st&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderAddData.st&quot; -l &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructFunctions.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructTypes.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructVariables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="True" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\structureloader.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\localfunctions\structureloader.st" LastWriteTime="2025-11-21 07:41:50" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\localfunctions\structureloadergetdata.st" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\localfunctions\structureloaderadddata.st" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoader.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\StructureLoader.st.o&quot; -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -s &quot;GetVarStructure&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -preprocessor -pointers -extComments -extBitAccess -extMembers -extConstants -D _SG4 -a &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderGetData.st&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderAddData.st&quot; -l &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructFunctions.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructTypes.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructVariables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="True" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\_bur_pvdef.st.o">
+    <Prerequisite ID="c:\program files\brautomation4\as412\as\gnuinst\v4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st" LastWriteTime="2024-05-07 13:22:22" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\main.st.o" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret\structureloader.st.o" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\global.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structvariables.var" LastWriteTime="2025-11-21 08:20:20" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\variables.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structtypes.typ" LastWriteTime="2025-11-21 07:41:12" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\getvarstructure\structfunctions.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\include\bur\_bur_pvdef.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\StructureT\_bur_pvdef.st.o&quot; -S &quot;Main.st&quot; &quot;StructureLoader.st&quot;  -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -s &quot;GetVarStructure&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -preprocessor -pointers -extComments -extBitAccess -extMembers -extConstants -D _SG4 -a &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderGetData.st&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\LocalFunctions\StructureLoaderAddData.st&quot; -l &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\Variables.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructFunctions.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructTypes.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\GetVarStructure\StructVariables.var&quot; -g &quot;$(AS_PROJECT_PATH)\Logical\Global.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Global.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+    <AdditionalBuildTrigger Key="IecDeclarationsInAnsiC" Value="True" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asbrstr.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\q0493\sg4\ia32\asbrstr.br" LastWriteTime="2025-09-10 14:44:58" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\AsBrStr.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AsBrStr.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sys_lib.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\q0493\sg4\ia32\sys_lib.br" LastWriteTime="2025-09-10 14:45:00" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\sys_lib.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\sys_lib.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\areventlog.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\q0493\sg4\ia32\areventlog.br" LastWriteTime="2025-09-10 14:44:58" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\ArEventLog.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\ArEventLog.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br">
+    <Prerequisite ID="c:\program files\brautomation4\as\system\q0493\sg4\ia32\runtime.br" LastWriteTime="2025-09-10 14:45:00" />
+    <CommandLine Parameter="C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\runtime.br, $(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\runtime.br" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk.br">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\adviecchk.ox" LastWriteTime="2025-11-21 07:39:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\iec.lby" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.var" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\AdvIecChk.ox&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk.br&quot; -v V2.00.0 -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\NT.ofs&quot; -offsetLT &quot;$(AS_PROJECT_PATH)\Binaries\Config1\PC\LT.ofs&quot; -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -extMembers -extConstants -d &quot;runtime: V* - V*,asieccon: V* - V*,Sys_Lib: V* - V*,AsBrStr: V* - V*,ArEventLog: V* - V*&quot; -r Library -R &quot;IEC Check w/ Advanced Debugging Data&quot; -s &quot;Libraries.AdvIecChk&quot; -L &quot;AdvIecChk: V2.00.0, ArEventLog: V*, AsBrStr: V*, AsIecCon: V*, astime: V*, operator: V*, runtime: V*, sys_lib: V*&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\adviecchk.ox">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\a.out" LastWriteTime="2025-11-21 07:39:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.var" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\a.out&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\AdvIecChk.ox&quot; -T SG4 -r Library -G V4.1.2  -B Q4.93 " />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\a.out">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\adviecchk.st.o" LastWriteTime="2025-11-21 07:39:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.var" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter=" -link &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\AdvIecChk.st.o&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\a.out&quot; &quot;-Wl,--version-script=$(AS_PROJECT_PATH)\Temp\Archives\Config1\PC\libAdvIecChk.expmap&quot; -G V4.1.2  -T SG4 -M IA32 &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libAsIecCon.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libArEventLog.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libsys_lib.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libastime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libAsBrStr.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\libruntime.a&quot; &quot;-Wl,C:\Program Files\BRAutomation4\AS\System\Q0493\SG4\Ia32\liboperator.a&quot; -specs &quot;C:\Program Files\BRAutomation4\AS412\AS\gnuinst\V4.1.2\4.9\i386-elf\specs\I386specs_brelf&quot; -nostdlib" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk\adviecchk.st.o">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.st" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\adviecchk\adviecchk.var" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\runtime\runtime.typ" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\sys_lib\sys_lib.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\asbrstr\asbrstr.fun" LastWriteTime="2025-11-21 07:29:34" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\logical\libraries\areventlog\areventlog.var" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter="&quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.st&quot;  -o &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\AdvIecChk\AdvIecChk.st.o&quot; -T SG4 -M IA32 -B Q4.93 -G V4.1.2  -s &quot;Libraries.AdvIecChk&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -preprocessor -pointers -extComments -extBitAccess -extMembers -extConstants -r Library -D _SG4 -g &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.typ&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.fun&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\operator\operator.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\runtime\runtime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\astime\astime.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsIecCon\AsIecCon.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AsBrStr\AsBrStr.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\sys_lib\sys_lib.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\ArEventLog\ArEventLog.var&quot; &quot;$(AS_PROJECT_PATH)\Logical\Libraries\AdvIecChk\AdvIecChk.var&quot; -P &quot;$(AS_PROJECT_PATH)&quot; " />
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <CommandLine Parameter=" -r -f &quot;$(AS_PROJECT_PATH)\Temp\Objects\Config1\PC\#cpu_tp.mak&quot; -k" />
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\config1\pc\transfer.lst">
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwac.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sysconf.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asfw.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\ashwd.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\arconfig.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\udbdef.br" LastWriteTime="2024-11-04 09:15:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\iomap.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\tcdata.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\role.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\user.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\fwrules.br" LastWriteTime="2025-11-21 07:39:38" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\structuret.br" LastWriteTime="2025-11-21 08:20:24" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\asbrstr.br" LastWriteTime="2025-09-10 14:44:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\sys_lib.br" LastWriteTime="2025-09-10 14:45:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\areventlog.br" LastWriteTime="2025-09-10 14:44:58" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\runtime.br" LastWriteTime="2025-09-10 14:45:00" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\temp\objects\config1\pc\adviecchk.br" LastWriteTime="2025-11-21 07:39:36" />
+    <Prerequisite ID="$(AS_PROJECT_PATH)\physical\config1\pc\cpu.sw" LastWriteTime="2025-11-21 07:29:34" />
+    <CommandLine Parameter=" &quot;$(AS_PROJECT_PATH)\StructureSample.apj&quot; -t &quot;$(AS_PROJECT_PATH)\Temp&quot; -o &quot;$(AS_PROJECT_PATH)\Binaries&quot; -c &quot;Config1&quot; -i &quot;C:\Program Files\BRAutomation4\AS412&quot; -S &quot;PC&quot; -A &quot;AR000&quot; -pil -swFiles &quot;$(AS_PROJECT_PATH)\Physical\Config1\PC\Cpu.sw&quot; -Z &quot;UnitSystem: n.d, Connectivity: n.d, FMUExport: n.d, TextSystem: n.d, ProgrammingSystem: n.d, RemanentData: n.d, AAS: n.d&quot; -C &quot;/COMT=2500 /RT=1000 /AM=* /SDT=5 /DAIP=192.168.30.181 /REPO=11159 /ANSL=1 /PT=11169&quot; -D &quot;/IF=tcpip /LOPO=11159 /SA=1&quot; -M IA32 -T SG4" />
+  </Rule>
+</RuleSetOptions>

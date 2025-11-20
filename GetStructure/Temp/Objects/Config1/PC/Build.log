@@ -1,0 +1,2 @@
+StructureSample | Config1 | Build
+mingw32-make.exe, Error = False. Call = mingw32-make.exe  -r -f "C:\Projects\Samples\AS\CodeSamples\GetStructure\Temp\Objects\Config1\PC\#cpu_tp.mak" -k

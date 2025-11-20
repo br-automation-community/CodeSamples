@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<breakpoints>
+  <breakpoint>
+    <status>Y</status>
+    <file>Logical/GetVarStructure/LocalFunctions/StructureLoader.st</file>
+    <position>42</position>
+    <condition></condition>
+    <instance></instance>
+    <program>StructureT</program>
+  </breakpoint>
+  <breakpoint>
+    <status>Y</status>
+    <file>Logical/GetVarStructure/LocalFunctions/StructureLoader.st</file>
+    <position>50</position>
+    <condition></condition>
+    <instance></instance>
+    <program>StructureT</program>
+  </breakpoint>
+  <breakpoint>
+    <status>Y</status>
+    <file>Logical/GetVarStructure/LocalFunctions/StructureLoaderGetData.st</file>
+    <position>14</position>
+    <condition></condition>
+    <instance></instance>
+    <program>StructureT</program>
+  </breakpoint>
+  <breakpoint>
+    <status>Y</status>
+    <file>Logical/GetVarStructure/LocalFunctions/StructureLoaderGetData.st</file>
+    <position>35</position>
+    <condition></condition>
+    <instance></instance>
+    <program>StructureT</program>
+  </breakpoint>
+  <breakpoint>
+    <status>Y</status>
+    <file>Logical/GetVarStructure/LocalFunctions/StructureLoaderGetData.st</file>
+    <position>83</position>
+    <condition></condition>
+    <instance></instance>
+    <program>StructureT</program>
+  </breakpoint>
+</breakpoints>

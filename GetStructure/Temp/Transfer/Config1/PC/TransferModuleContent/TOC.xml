@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Toc Version="2" MinorVersion="0">
+	<Application>
+		<Class Name="Os">
+			<Folder Name="Brm" ProjectDependent="1" IgnoreDifference="0">
+				<File Name="@cfAR000.br" Size="4328" HashValue="CEBD7A38F22131C7312BCA4375924044" ProjectDependent="1" IgnoreDifference="0" />
+				<File Name="@sbAR000.br" Size="2068" HashValue="14DA707F8D78E3BC60B2675DE1F09035" ProjectDependent="1" IgnoreDifference="0" />
+			</Folder>
+			<Folder Name="System" ProjectDependent="1" IgnoreDifference="0">
+				<Folder Name="BASE" ProjectDependent="1" IgnoreDifference="0">
+					<Folder Name="COMPONENTS" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="ArLcTextP.br" Size="298204" HashValue="AD2AFA5B8B366E1CD2CF614FBB0E94A0" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="ArUnitSys.br" Size="480512" HashValue="DB2816C69BEF768490166E69FBB2D728" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+					<Folder Name="HWD" ProjectDependent="1" IgnoreDifference="0">
+						<File Name="AsHwdSimulation.xml.gz" Size="12860" HashValue="EAA19EF358140F60957F7EAAA5D2CA3D" ProjectDependent="1" IgnoreDifference="0" />
+						<File Name="AsHwdhw_upl.xml.gz" Size="16565" HashValue="5BCEF8474EEC59BAC13161F4E5BD2D69" ProjectDependent="1" IgnoreDifference="0" />
+					</Folder>
+				</Folder>
+				<Folder Name="SDM" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="arsdm.tar.gz" Size="506864" HashValue="6FF1751C4BF338EFD90E9EB121E4B805" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="TOC" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ftoc.xml" Size="443" HashValue="BB69CD15F121226A55058A39A897AB29" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+				<Folder Name="WEBSERV" ProjectDependent="1" IgnoreDifference="0">
+					<File Name="ArWebServ.br" Size="108756" HashValue="11584CC40EC02AA7018032F592D0258C" ProjectDependent="1" IgnoreDifference="0" />
+				</Folder>
+			</Folder>
+		</Class>
+		<Memory Name="SYSROM">
+			<Module Name="::$$sysconf" Type="129" Size="67644" Modified="2025-11-21 08:39:39" Version="4.93" ProjectDependent="1" Reboot="1" />
+			<Module Name="::TCData" Type="209" Size="3796004" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::arconfig" Type="132" Size="448" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::asfw" Type="67" Size="128" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" Reboot="1" />
+			<Module Name="::ashwd" Type="67" Size="524" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" Reboot="1" />
+		</Memory>
+		<Memory Name="USERROM">
+			<Module Name="::AdvIecChk" Type="18" Size="3932" Modified="2025-11-21 08:39:36" Version="2.00" ProjectDependent="1" />
+			<Module Name="::ArEventLog" Type="18" Size="17388" Modified="2025-09-10 14:22:41" Version="4.93" ProjectDependent="1" />
+			<Module Name="::AsBrStr" Type="18" Size="9620" Modified="2025-09-10 14:42:42" Version="4.93" ProjectDependent="1" />
+			<Module Name="::AsIecCon" Type="18" Size="17432" Modified="2025-09-10 14:18:44" Version="4.93" ProjectDependent="1" />
+			<Module Name="::FWRules" Type="136" Size="456" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::Role" Type="136" Size="760" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::StructureT" Type="17" Size="7628" Modified="2025-11-21 09:20:25" Version="1.00" ProjectDependent="1" />
+			<Module Name="::User" Type="136" Size="648" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::ashwac" Type="136" Size="212" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::astime" Type="18" Size="24184" Modified="2025-09-10 14:25:49" Version="4.93" ProjectDependent="1" />
+			<Module Name="::iomap" Type="50" Size="304" Modified="2025-11-21 08:39:39" Version="1.00" ProjectDependent="1" />
+			<Module Name="::runtime" Type="18" Size="29340" Modified="2025-09-10 14:49:00" Version="4.93" ProjectDependent="1" />
+			<Module Name="::sys_lib" Type="18" Size="20472" Modified="2025-09-10 14:51:27" Version="4.93" ProjectDependent="1" />
+			<Module Name="::udbdef" Type="210" Size="70264" Modified="2014-04-10 10:00:00" Version="0.01" ProjectDependent="1" />
+		</Memory>
+	</Application>
+</Toc>

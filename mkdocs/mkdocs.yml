@@ -1,0 +1,26 @@
+site_name: Code Samples
+use_directory_urls: false
+
+extra_css: [extra.css]
+
+nav:
+  - Introduction: index.md
+  - Get Structure Details: GetStructure.md
+  - Revision: revision.md
+
+theme:
+  name: material
+  logo: images/bur.png
+
+  palette:
+    scheme: default
+    primary: orange
+    accent: orange
+
+  features: toc.integrate
+
+plugins:
+  - search
+
+repo_url: https://github.com/br-automation-community/CodeSamples
+repo_name: GitHub Repo
