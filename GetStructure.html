@@ -379,7 +379,7 @@
 
 <h1 id="get-structure-details-using-structureloader">Get structure details using StructureLoader</h1>
 <h2 id="overview">Overview</h2>
-<p><code>StructureLoader</code> is a function block that recursively loads information about a structure (and nested structures) whose variable name is provided via a reference string. It collects metadata such as total size, number of entries, and detailed entry descriptions in <code>StructDetails</code>.</p>
+<p><code>StructureLoader</code> is a function block that recursively loads information about a structure (and nested structures) whose variable name is provided via a reference string. It collects metadata such as total size, number of entries, and detailed entry descriptions in <code>StructDetails</code>. This can also be used to detect changes in the structure and list the exact variable that was changed.</p>
 <h2 id="contract-inputs-outputs">Contract (inputs / outputs)</h2>
 <ul>
 <li>Inputs</li>
@@ -417,11 +417,13 @@
 <li>
 <p><code>MAX_VARIABLE_NAME_LEN : UINT := 200</code> — Maximum length allowed for a fully qualified variable name passed in <code>StructAdr</code>. If you have long namespaces or deep instance paths, increase this value. Note that the loader checks and reports <code>ERR_VAR_TO_LONG</code> when the total name length exceeds the supported limit.</p>
 </li>
+<li>
+<p><code>OVERRIDE : UINT := 2</code> — Number of executions per cycle. Increasing this value can speed up loading for large structures but may impact cycle time. Adjust based on performance needs.</p>
+</li>
 </ul>
 <h2 id="error-handling">Error handling</h2>
 <ul>
-<li>Check <code>Error</code> after <code>Busy</code> clears. When <code>Error = TRUE</code> use <code>ErrorText</code> and <code>ErrorCode</code> to determine the cause.</li>
-<li>Common errors include: invalid <code>StructAdr</code>, out-of-range indices, or missing type definitions.</li>
+<li>Check <code>Error</code> after <code>Busy</code> clears and <code>Done</code> is TRUE. When <code>Error = TRUE</code> use <code>ErrorText</code> and <code>ErrorCode</code> to determine the cause.</li>
 </ul>
 
 
