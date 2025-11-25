@@ -4,7 +4,7 @@ A collection of code samples and snipptes
 
 # List of samples
 
-- Get Structure Details - List all members of structure with details. Can also be used to compare structures.
+- [Get Structure Details](https://br-automation-community.github.io/CodeSamples/GetStructure.html) - List all members of structure with details. Can also be used to compare structures.
 
 # Documentation
 
