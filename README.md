@@ -2,8 +2,7 @@
 
 A collection of code samples and snipptes. The code samples are organized as branches. Click on main at the top left and select the sample you want. Or click on the link the list of samples
 
-<img width="201" height="228" alt="image" src="https://github.com/user-attachments/assets/7c076df2-7efa-4cc7-8542-200f3f6c3a5a" />
-
+<img width="249" height="262" alt="image" src="https://github.com/user-attachments/assets/13ac5aca-97f9-4b97-9e4d-fb9d6ad5fc17" />
 
 # List of samples
 
